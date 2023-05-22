@@ -1,0 +1,19 @@
+## Interface: 30300
+## Title: QuestItemBar
+## Notes: Simple quest item bar.
+## Author: Nickenyfiken
+## SavedVariables: QuestItemBarDB
+## OptionalDeps: Ace3, ButtonFacade, LibQuestItem-1.0
+## X-Category: Quest
+## Version: v0.6
+## X-Curse-Packaged-Version: v0.6
+## X-Curse-Project-Name: QuestItemBar
+## X-Curse-Project-ID: questitembar
+## X-Curse-Repository-ID: wow/questitembar/mainline
+
+embeds.xml
+
+Locale\locale.xml
+
+Core.lua
+Options.lua

@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: |cffffc300*|r |cffff9999pretty_patchkit|r
+## Notes: |cffcaf7faManages GearScore and Item Level for pretty patch|r
+## Notes-ruRU: |cffcaf7faМенеджер гирскора и уровня предметов для прекрасного патча|r
+## Version: 1.01
+## Author: s0high
+## SavedVariablesPerCharacter: _data
+
+_patchkit.xml

@@ -1,0 +1,83 @@
+------------------------------------------------------------------------
+r56 | nickenyfiken | 2010-08-14 14:39:14 +0000 (Sat, 14 Aug 2010) | 1 line
+Changed paths:
+   A /tags/v0.6 (from /trunk:55)
+
+Tagging as v0.6
+------------------------------------------------------------------------
+r54 | Nickenyfiken | 2010-08-11 21:04:58 +0000 (Wed, 11 Aug 2010) | 2 lines
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/Core.lua
+   M /trunk/embeds.xml
+
+-Remove AceBucket.
+-New LQI version.
+------------------------------------------------------------------------
+r53 | Nickenyfiken | 2010-08-09 18:17:30 +0000 (Mon, 09 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+-New LQI version.
+------------------------------------------------------------------------
+r52 | Nickenyfiken | 2010-08-08 20:29:01 +0000 (Sun, 08 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+Add extra InCombatLockdown().
+------------------------------------------------------------------------
+r51 | Nickenyfiken | 2010-08-06 21:27:24 +0000 (Fri, 06 Aug 2010) | 2 lines
+Changed paths:
+   M /trunk/Options.lua
+
+-Push new revision of LibQuestItem.
+-Added new locale phrases.
+------------------------------------------------------------------------
+r50 | Nickenyfiken | 2010-08-06 01:07:42 +0000 (Fri, 06 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+-Some cleanup and remove debug print.
+------------------------------------------------------------------------
+r49 | Nickenyfiken | 2010-08-06 00:21:59 +0000 (Fri, 06 Aug 2010) | 2 lines
+Changed paths:
+   M /trunk/Core.lua
+   M /trunk/Options.lua
+
+-Add ability to drag items to the bar to ignore/unignore if it is a quest item, or to make a item always show even if it is not a quest item (or possibly not detected as one).
+-Fix some bugs.
+------------------------------------------------------------------------
+r48 | Nickenyfiken | 2010-08-05 21:41:08 +0000 (Thu, 05 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+Fix ignore items.
+------------------------------------------------------------------------
+r47 | Nickenyfiken | 2010-08-05 21:15:56 +0000 (Thu, 05 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/Core.lua
+   M /trunk/Options.lua
+   M /trunk/embeds.xml
+
+Merge experimental branch.
+------------------------------------------------------------------------
+r46 | Nickenyfiken | 2010-08-05 11:40:48 +0000 (Thu, 05 Aug 2010) | 2 lines
+Changed paths:
+   M /trunk/QuestItemBar.toc
+
+
+-Add LibQuestItem-1.0 to OptDeps.
+------------------------------------------------------------------------
+r45 | Nickenyfiken | 2010-07-28 12:08:00 +0000 (Wed, 28 Jul 2010) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+Fix ticket 17 - Spams chat with updates.
+------------------------------------------------------------------------
+r44 | Nickenyfiken | 2010-07-28 02:15:00 +0000 (Wed, 28 Jul 2010) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+Check for quest items in quest log (wow that is really smart doh).
+------------------------------------------------------------------------

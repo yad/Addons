@@ -1,0 +1,13 @@
+tag v1.0
+7108b6bfddd8da7c915d0c62ad1648c5ac9516b5
+root <root@cfrepos1.curseforge.net>
+2010-09-28 05:18:57 +0000
+
+Tagging as v1.0
+
+
+--------------------
+
+iceeagle:
+	- added project files
+	- repo init

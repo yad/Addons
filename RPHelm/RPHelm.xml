@@ -1,0 +1,113 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Frame name="RPHelmOptions" hidden="true">
+                <Layers>
+                        <Layer level="OVERLAY">
+                        <FontString name="$parentTitle" font="GameFontNormalLarge" justifyH="LEFT" justifyV="TOP" text="RPHelm">
+                                <Anchors>
+                                        <Anchor point="TOPLEFT">
+                                               <Offset x="16" y="-16"/>
+                                        </Anchor>
+                                </Anchors>
+                        </FontString>
+                        <FontString name="$parentVersion" font="GameFontNormalSmall" justifyH="LEFT" justifyV="BOTTOM">
+                                <Anchors>
+                                         <Anchor point="BOTTOMLEFT" relativeTo="$parentTitle" relativePoint="BOTTOMRIGHT">
+                                                <Offset x="4" y="1"/>
+                                         </Anchor>
+                                </Anchors>
+                        </FontString>
+                        </Layer>
+                </Layers>
+		<Frames>
+
+			<CheckButton name="$parentMaster" inherits="InterfaceOptionsCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentVersion" relativePoint="BOTTOMRIGHT">
+						<Offset x="10" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad> RPHelm.CheckButtonText(self, "Master Switch", "If unchecked, RPHelm will not automatically control helm/cloak visibility for this character. Manual RPHelm commands (/helm, /cloak, /rphelm) will still work.") </OnLoad>
+					<OnShow> self:SetChecked(RPHelm_config.master) </OnShow>
+					<OnClick> RPHelm.ToggleOption("master") </OnClick>
+				</Scripts>
+			</CheckButton>
+			
+-- HELM COMBAT OPTION
+			<CheckButton name="$parentHelmCombat" inherits="InterfaceOptionsCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent">
+						<Offset><AbsDimension x="20" y="-48"/></Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+                    <OnLoad> RPHelm.CheckButtonText(self, "Show Helm in Combat", "With this checked, your helm will automatically be shown when in combat.") </OnLoad>
+					<OnShow> self:SetChecked(RPHelm_config.helmcombat) </OnShow>
+					<OnClick> RPHelm.ToggleOption("helmcombat") </OnClick>
+				</Scripts>
+			</CheckButton>
+
+-- HELM NOCOMBAT OPTION
+			<CheckButton name="$parentShowHelmNocombat" inherits="InterfaceOptionsCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentHelmCombat" relativePoint="TOPLEFT">
+						<Offset x="0" y="-32"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad> RPHelm.CheckButtonText(self, "Show Helm out of Combat", "With this checked, your cloak will be automatically shown when not in combat.") </OnLoad>
+					<OnShow> self:SetChecked(RPHelm_config.helmnocombat) </OnShow>
+					<OnClick> RPHelm.ToggleOption("helmnocombat") </OnClick>
+				</Scripts>
+			</CheckButton>
+
+-- PVP OPTION
+			<CheckButton name="$parentPVP" inherits="InterfaceOptionsCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentHelmCombatText" relativePoint="TOPRIGHT">
+						<Offset x="20" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad> RPHelm.CheckButtonText(self, "Treat PVP flagged as in combat", "If checked, RPHelm will show/hide your helm and cloak when you are PVP flagged as if you were in combat.") </OnLoad>
+					<OnShow> self:SetChecked(RPHelm_config.pvpascombat) </OnShow>
+					<OnClick> RPHelm.ToggleOption("pvpascombat") </OnClick>
+				</Scripts>
+			</CheckButton>
+
+-- CLOAK COMBAT OPTION
+			<CheckButton name="$parentShowCloakCombat" inherits="InterfaceOptionsCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent">
+						<Offset><AbsDimension x="20" y="-112"/></Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad> RPHelm.CheckButtonText(self, "Show Cloak in Combat", "With this checked, your cloak will be automatically shown when in combat."); </OnLoad>
+					<OnShow> self:SetChecked(RPHelm_config.cloakcombat) </OnShow>
+					<OnClick> RPHelm.ToggleOption("cloakcombat") </OnClick>
+				</Scripts>
+			</CheckButton>
+
+-- CLOAK NOCOMBAT OPTION
+			<CheckButton name="$parentShowCloakNocombat" inherits="InterfaceOptionsCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent">
+						<Offset><AbsDimension x="20" y="-144"/></Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad> RPHelm.CheckButtonText(self, "Show Cloak out of Combat", "With this checked, your cloak will be automatically shown when not in combat."); </OnLoad>
+					<OnShow> self:SetChecked(RPHelm_config.cloaknocombat) </OnShow>
+					<OnClick> RPHelm.ToggleOption("cloaknocombat") </OnClick>
+				</Scripts>
+			</CheckButton>
+
+		</Frames>
+		<Scripts>
+			<OnLoad>
+                                RPHelm.OptionsOnLoad(self)
+			</OnLoad>
+		</Scripts>
+	</Frame>
+</Ui>

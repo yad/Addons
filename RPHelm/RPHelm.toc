@@ -1,0 +1,16 @@
+## Interface: 60000
+## Title: RPHelm
+## Author: Travis Casey
+## Version: 2.04
+## X-Date: October 30, 2014
+## Notes: Show helm/cloak when in combat, hide when out. /rphelm to configure. /helm [show|hide] and /cloak [show|hide]
+## X-Email: efindel@gmail.com
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariablesPerCharacter: RPHelm_config
+## X-Curse-Packaged-Version: v2.04
+## X-Curse-Project-Name: RPHelm
+## X-Curse-Project-ID: rphelm
+## X-Curse-Repository-ID: wow/rphelm/mainline
+RPHelm.lua
+RPHelm.xml

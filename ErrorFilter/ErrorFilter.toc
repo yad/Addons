@@ -1,0 +1,14 @@
+## Interface: 30300
+## X-Compatible-With: 40000
+## Title: ErrorFilter
+## Notes: Filters the errors dislayed in the UIErrorsFrame.
+## Version: 1.7
+## Author: iceeagle
+## SavedVariables: DB_Options, DB_Filters
+## DefaultState: enabled
+## X-Curse-Packaged-Version: v1.7-beta2
+## X-Curse-Project-Name: ErrorFilter
+## X-Curse-Project-ID: errorfilter
+## X-Curse-Repository-ID: wow/errorfilter/mainline
+
+ErrorFilter.lua

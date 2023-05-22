@@ -1,0 +1,12 @@
+tag v1.7-beta2
+07625454516037718a618f9262b58cf93e6f15e2
+root <root@cfrepos1.curseforge.net>
+2010-09-16 04:02:45 +0000
+
+Tagging as v1.7-beta2
+
+
+--------------------
+
+iceeagle:
+	- removed test messages
