@@ -683,7 +683,6 @@ function addon:UpdateFrame(zid, zgid)
 		local questcount = 0
 		if questlist then
 			for k, quest in pairs (questlist) do
-					if (quest.c) then print("686", quest.c) end
 					if addon:Filterer(quest.id, quest) then
 						if dbpc.history[zoneid] ~= nil and dbpc.history[zoneid][quest.id] ~= nil then
 							--if db.detailnumbers then
@@ -833,7 +832,6 @@ function addon:GetQuestData(questid, category, questname, zid)
 			return false
 		end
 		for uid,quest in pairs(quests) do
-			if (quest.c) then print("836", quest.c) end
 			--for kt,vt in pairs(quest) do self:Print(kt .. " - " .. vt) end
 			if quest.id == questid then
 				self:Debug("GetQuestData - from data - questid:"..tostring(questid).." zonegroup:"..tostring(zg).." zoneid:"..tostring(zid))
@@ -854,7 +852,6 @@ function addon:GetQuestData(questid, category, questname, zid)
 		end
 		for k,part in pairs(moduledata) do
 			for uid,quest in pairs(part) do
-				if (quest.c) then print("855", quest.c) end
 				--for kt,vt in pairs(quest) do self:Print(kt .. " - " .. vt) end
 				if quest.id == questid then
 					zid = k
@@ -878,7 +875,6 @@ function addon:GetQuestData(questid, category, questname, zid)
 		if moduledata ~= false then
 			for k,part in pairs(moduledata) do
 				for kt,quest in pairs(part) do
-					if (kt < 0) then print("881", kt, quest.c) end
 					-- for kt,vt in pairs(quest) do self:Print(kt .. " - " .. vt) end
 					if quest.id == questid then
 						zid = k
