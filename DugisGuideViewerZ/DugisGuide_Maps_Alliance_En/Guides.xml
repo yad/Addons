@@ -1,0 +1,32 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Script file="13_18_Ragefire_Chasm.lua"/>
+	<Script file="15_20_The_Deadmines_Pre.lua"/>
+	<Script file="15_20_The_Deadmines.lua"/>
+	<Script file="15_21_Wailing_Caverns.lua"/>
+	<Script file="18_22_Shadowfang_Keep.lua"/>
+	<Script file="20_24_Blackfathom_Deeps.lua"/>
+	<Script file="21_25_The_Stockade.lua"/>
+	<Script file="23_28_Razorfen_Kraul.lua"/>
+	<Script file="24_29_Gnomeregan.lua"/>
+	<Script file="27_39_Scarlet_Monestary.lua"/>
+	<Script file="33_38_Razorfen_Downs.lua"/>
+	<Script file="39_45_Uldaman.lua"/>
+	<Script file="42_47_ZulFarrak.lua"/>
+	<Script file="45_49_Maraudon_PreInstance.lua"/>
+	<Script file="45_49_Maraudon.lua"/>
+	<Script file="48_52_Sunken_Temple.lua"/>
+	<Script file="52_55_Blackrock_Depths.lua"/>
+	<Script file="55_58_The_Scarlet_Enclave.lua"/>
+	<Script file="55_58_Scholomance_Stratholme.lua"/>
+	
+	<Script file="58_62_Hellfire_Ramparts.lua"/>
+	<Script file="58_62_The_Blood_Furnace.lua"/>
+	<Script file="62_65_The_Slave_Pens.lua"/>
+	<Script file="62_65_The_Underbog.lua"/>
+	<Script file="64_67_Mana-Tombs.lua"/>
+	<Script file="64_67_Auchenai_Crypts.lua"/>
+	<Script file="66_68_Old_Hillsbrad_Foothills.lua"/>
+	<Script file="67_68_Sethekk_Halls.lua"/>
+	<Script file="67_69_The_Steamvault.lua"/>
+</Ui>

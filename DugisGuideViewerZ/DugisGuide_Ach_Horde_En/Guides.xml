@@ -1,0 +1,45 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="General.lua"/>
+	<Script file="Critter_Achievement_H.lua"/>
+	<Script file="Hail_to_the_Chef_H.lua"/>
+	<Script file="Keymaster_H.lua"/>
+	<Script file="Higher_Learning.lua"/>
+	<Script file="Well_Read_H.lua"/>
+	
+	<Script file="Quests.lua"/>
+	<Script file="Hemet_Nesingwary_H.lua"/>
+
+	<Script file="Exploration.lua"/>
+	<Script file="Exploration_Eastern_Kingdom_H.lua"/>
+	<Script file="Exploration_Kalimdor_H.lua"/>
+	<Script file="Exploration_Outland_H.lua"/>
+	<Script file="Exploration_Northrend_H.lua"/>
+
+	<Script file="Classic_Rep.lua"/>
+	<Script file="Argent_Dawn_H.lua"/>
+	<Script file="Cenarion_Circle_H.lua"/>
+	<Script file="Timbermaw_Hold_H.lua"/>
+	<Script file="Venomhide_Ravasaur_H.lua"/>
+	
+	<Script file="BC_Rep.lua"/>
+	<Script file="Aldor_H.lua"/>
+	<Script file="Cenarion_Expedition_H.lua"/>
+	<Script file="Mag'har_H.lua"/>
+	<Script file="Netherwing_Rep_H.lua"/>
+	<Script file="Netherwing_Dailies_H.lua"/>	
+	<Script file="Ogrila_H.lua"/>
+	<Script file="Scryer_H.lua"/>
+	<Script file="Sha'tari_Skyguard_H.lua"/>
+	<Script file="Sha'tari_Skyguard_Dailies_H.lua"/>
+	<Script file="Sporeggar_H.lua"/>
+	<Script file="The_Consortium_H.lua"/>
+		
+	<Script file="WotLK_Rep.lua"/>
+	<Script file="Argent_Crusade_H.lua"/>
+	<Script file="Knights_Ebon_Hold_H.lua"/>
+	<Script file="Kirin_Tor_H.lua"/>
+	<Script file="Oracle_Frenzyheart_H.lua"/>
+	<Script file="The_Kalu'ak_H.lua"/>
+	<Script file="Wyrmrest_Accord_H.lua"/>
+	
+</Ui>

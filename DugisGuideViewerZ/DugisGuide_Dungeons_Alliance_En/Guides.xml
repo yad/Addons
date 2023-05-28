@@ -1,0 +1,46 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="01_12_Azuremyst_Isle.lua"/>
+	<Script file="01_12_Dun_Morogh.lua"/>
+	<Script file="01_12_Elwynn_Forest.lua"/>
+	<Script file="01_12_Teldrassil.lua"/>
+	<Script file="12_16_Bloodmyst_Isle.lua"/>
+	<Script file="12_16_Darkshore.lua"/>
+	<Script file="12_16_Westfall.lua"/>
+	
+	<Script file="15_20_The_Deadmines.lua"/>
+	<Script file="15_21_Wailing_Caverns.lua"/>
+	<Script file="20_24_Blackfathom_Deeps.lua"/>
+	<Script file="21_25_The_Stockade.lua"/>
+	<Script file="23_28_Razorfen_Kraul.lua"/>
+	<Script file="24_29_Gnomeregan.lua"/>
+	<Script file="27_33_Scarlet_Monestary_Graveyard_Library.lua"/>
+	<Script file="33_38_Razorfen_Downs.lua"/>
+	<Script file="34_39_Scarlet_Monestary_Armory_Cathedral.lua"/>
+	<Script file="39_45_Uldaman.lua"/>
+	<Script file="42_47_ZulFarrak.lua"/>
+	
+	<Script file="45_49_Maraudon.lua"/>
+	<Script file="48_52_Sunken_Temple.lua"/>
+	<Script file="52_55_Blackrock_Depths.lua"/>
+	<Script file="55_58_The_Scarlet_Enclave.lua"/>
+	<Script file="55_58_Scholomance_Stratholme.lua"/>
+	<Script file="58_62_Hellfire_Ramparts_The_Blood_Furnace.lua"/>
+	<Script file="62_65_Slave_Pens_The_Underbog.lua"/>
+	<Script file="64_67_Mana-Tombs_Auchenai_Crypts.lua"/>
+	<Script file="66_68_Old_Hillsbrad_Foothills.lua"/>
+
+	<Script file="67_68_Sethekk_Halls.lua"/>
+	<Script file="67_69_The_Steamvault.lua"/>
+	<Script file="68_70_Utgarde_Keep.lua"/>
+	<Script file="70_72_The_Nexus.lua"/>
+	<Script file="72_74_Azjol-Nerub_AhnKahet_The_Old_Kingdom.lua"/>
+	<Script file="74_76_Drak'Tharon_Keep.lua"/>
+	<Script file="75_77_The_Violet_Hold.lua"/>
+	<Script file="76_78_Gundrak.lua"/>
+	<Script file="77_79_Halls_of_Stone.lua"/>
+	<Script file="78_80_Halls_of_Lightning.lua"/>
+	<Script file="78_80_The_Oculus.lua"/>
+
+	<Script file="78_80_The_Culling_Of_Stratholme.lua"/>
+	<Script file="78_80_Utgarde_Pinnacle.lua"/>
+</Ui>

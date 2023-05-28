@@ -1,0 +1,13 @@
+## Interface: 30300
+## Title: DugiGuides Ach / Prof - |cff2a5ac7Alliance|r En
+## Notes: English |cff2a5ac7Alliance|r 1-80 Leveling Guide by Dugi of UlimateWoWGuide.com v1.01
+## Author: Dave Farrell 
+## Version: 1.01
+## X-Category: Quest
+## RequiredDeps: DugisGuideViewerZ
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+Guides.xml
+
+
