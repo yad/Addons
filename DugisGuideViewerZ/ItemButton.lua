@@ -2,8 +2,8 @@ local DugisGuideViewer = DugisGuideViewer
 local texture, item
 local frame = CreateFrame("Button", "DugisGuideViewerItemFrame", UIParent, "SecureActionButtonTemplate")
 frame:SetFrameStrata("LOW")
-frame:SetHeight(36)
-frame:SetWidth(36)
+frame:SetHeight(64)
+frame:SetWidth(64)
 
 frame:SetPoint("TOPRIGHT", Minimap, "BOTTOMLEFT", -150, -150)
 frame:Hide()
@@ -26,18 +26,18 @@ itemicon:SetWidth(24) itemicon:SetHeight(24)
 itemicon:SetTexture("Interface\\Icons\\INV_Misc_Bag_08")
 itemicon:SetAllPoints(frame)
 frame:RegisterForClicks("anyUp")
-frame:HookScript("OnClick", function() 
+frame:HookScript("OnClick", function()
 	DebugPrint("GetItemIcon(DugisGuideViewer.useitem[CurrentQuestIndex]) ="..GetItemIcon(DugisGuideViewer.useitem[CurrentQuestIndex]) .."itemicon:GetTexture()="..itemicon:GetTexture())
-	--if GetItemIcon(DugisGuideViewer.useitem[CurrentQuestIndex]) == itemicon:GetTexture() then 
+	--if GetItemIcon(DugisGuideViewer.useitem[CurrentQuestIndex]) == itemicon:GetTexture() then
 	if CurrentAction == "U" then
 		DebugPrint("Detected use item")
 		DugisGuideViewer:SetChkToComplete(CurrentQuestIndex)
-		DugisGuideViewer:MoveToNextQuest()	
-	end 
+		DugisGuideViewer:MoveToNextQuest()
+	end
 end)
 
 local function PLAYER_REGEN_ENABLED(self)
-	if texture and DugisGuideViewer:GetFlag("ItemButtonOn") then 
+	if texture and DugisGuideViewer:GetFlag("ItemButtonOn") then
 		itemicon:SetTexture(texture)
 		frame:SetAttribute("type1", "item")
 		frame:SetAttribute("item1", "item:"..item)
