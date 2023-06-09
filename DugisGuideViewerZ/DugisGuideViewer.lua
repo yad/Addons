@@ -363,6 +363,54 @@ function DugisMainframe_OnEvent(self, event, msg, ...)
         DugisGuideViewer:UpdateProfessions()
     elseif event == "PLAYER_LEVEL_UP" then
         DugisGuideViewer:UpdatePlayerLevels()
+    elseif event == "GOSSIP_SHOW" then
+        -- print(DugisGuideViewer.quests1L[CurrentQuestIndex])
+
+        -- if GetGossipAvailableQuests() then
+        --     for qnum=1,GetGossipAvailableQuests() do
+        --         print(GetAvailableTitle(qnum))
+        --         print("=================")
+        --         if DugisGuideViewer.quests1L[CurrentQuestIndex]==GetAvailableTitle(qnum) then
+        --             SelectGossipAvailableQuest(qnum)
+        --             return
+        --         end
+        --     end
+        -- end
+
+        -- if GetNumGossipActiveQuests() then
+        --     for qnum=1,GetNumGossipActiveQuests() do
+        --         print(GetAvailableTitle(qnum))
+        --         print("=================")
+        --         if DugisGuideViewer.quests1L[CurrentQuestIndex]==GetAvailableTitle(qnum) then
+        --             SelectGossipActiveQuest(qnum)
+        --             return
+        --         end
+        --     end
+        -- end
+
+		-- for qnum=1,GetNumGossipOptions() do
+        --     print(GetTitle(qnum))
+        --     print("=================")
+		-- 	if DugisGuideViewer.quests1L[CurrentQuestIndex]==GetAvailableTitle(qnum) then
+		-- 		SelectGossipOption(qnum)
+		-- 		return
+		-- 	end
+		-- end
+
+    elseif event == "QUEST_DETAIL" then
+        -- print(GetTitleText())
+        -- print(DugisGuideViewer.quests1L[CurrentQuestIndex])
+        if GetTitleText() == DugisGuideViewer.quests1L[CurrentQuestIndex] then
+            QuestDetailAcceptButton_OnClick()
+        end
+    -- elseif event == "QUEST_COMPLETE" then
+    --     if (GetNumQuestChoices()>1) then
+    --         return
+    --     end
+
+    --     if GetTitleText() == DugisGuideViewer.quests1L[CurrentQuestIndex] then
+    --         GetQuestReward()
+    --     end
     end
 end
 local tabs

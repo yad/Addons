@@ -82,7 +82,7 @@ addon.config = {
 		leftbar_offset = 90,								--; multibar left is shown, this pushes bar to up.
 		rightbar_offset = 40,								--; multibar right is shown, this pushes bar to up.
 		stance = {
-			x_position = 0,									--; stancebar x-axis position.
+			x_position = 10,									--; stancebar x-axis position.
 		},
 		pet = {
 			x_position = 10,									--; petbar x-axis position.

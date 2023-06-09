@@ -32,7 +32,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
            <EdgeSize>
                <AbsValue val="32"/>
            </EdgeSize>
-		</Backdrop>	
+		</Backdrop>
 		<!-- <Frames>
          <Button name='$parentClose' inherits='UIPanelCloseButton'>
             <Anchors> <Anchor point='TOPRIGHT'> <Offset> <AbsDimension x='-5' y='-4'/> </Offset> </Anchor> </Anchors>
@@ -47,7 +47,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 
 <!--Template for a row with checkbox, picture and quest text -->
 <Button name = "RecapPanelDetailTemplate" virtual="true" >
-	<Size> 
+	<Size>
 		<AbsDimension x="545" y="35" />
 	</Size>
 <!--	<HighlightTexture alphaMode ="ADD"
@@ -57,28 +57,28 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 			DugisGuideViewer:Tooltip_OnEnter(self, event)
 		</OnEnter>
 		<OnLeave>
-			DugisGuideViewer:Tooltip_OnLeave(self, event)		
+			DugisGuideViewer:Tooltip_OnLeave(self, event)
 		</OnLeave>
 	</Scripts>
-	
+
 		<Frames>
 			<CheckButton name = "$parentChk" inherits ="UICheckButtonTemplate" visible ="false">
 				<Size x="25" y="25"/>
 				<Anchors>
 				<Anchor point = "TOPLEFT"/>
 				</Anchors>
-				
+
 				<Scripts>
 				<OnClick function="DugisGuideViewer_CheckButton_OnEvent">
 				</OnClick>
 				</Scripts>
-				</CheckButton>	
-			
+				</CheckButton>
+
 		<Button name ="$parentButton">
 			<Size x="32" y="32"/>
 			<NormalTexture  setAllPoints ="true"/>
 			<!--<HighlightTexture alphaMode ="ADD"
-			file ="Interface\Buttons\ButtonHilight-Square"/>-->	
+			file ="Interface\Buttons\ButtonHilight-Square"/>-->
 			<Anchors>
 			<Anchor point="LEFT" relativeTo="$parentChk" relativePoint="RIGHT" />
 			</Anchors>
@@ -123,19 +123,19 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				</Offset>
 				</Anchor>
 				</Anchors>
-			</FontString>			
-			
-			
-			
+			</FontString>
+
+
+
 		</Layer>
 	</Layers>
-	
+
 
 </Button> ><!--End of virutual button row-->
 
 <!--Template for the small window with icon and text -->
 <Button name = "IconReferenceTemplate" virtual="true" >
-	<Size> 
+	<Size>
 		<AbsDimension x="300" y="35" />
 	</Size>
 	<!--
@@ -145,7 +145,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
            tile="true">
 	</Backdrop>
 -->
-	
+
 <!--	<HighlightTexture alphaMode ="ADD"
 			file ="Interface\Buttons\ButtonHilight-Square"/>-->
 	<Frames>
@@ -158,8 +158,8 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 		<Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT" />
 		</Anchors>
 	</Button>
-		</Frames>	
-	
+		</Frames>
+
 	<Layers>
 		<Layer >
 			<FontString name="$parentName" inherits="GameFontNormal" wraponspaces="false" text=""> <!--GameFontHighlight-->
@@ -174,8 +174,8 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				</Offset>
 				</Anchor>
 				</Anchors>
-			</FontString>			
-			
+			</FontString>
+
 		</Layer>
 	</Layers>
 
@@ -188,7 +188,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 
 <!--Template for the small window with icon and text -->
 <Button name = "SmallWindowTemplate" virtual="true" >
-	<Size> 
+	<Size>
 		<AbsDimension x="300" y="35" />
 	</Size>
 	<!--
@@ -198,7 +198,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
            tile="true">
 	</Backdrop>
 	-->
-	
+
 <!--	<HighlightTexture alphaMode ="ADD"
 			file ="Interface\Buttons\ButtonHilight-Square"/>-->
 
@@ -208,11 +208,11 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 			DugisGuideViewer:SmallWindowTooltip_OnEnter(self, event)
 		</OnEnter>
 		<OnLeave>
-			DugisGuideViewer:SmallWindowTooltip_OnLeave(self, event)		
+			DugisGuideViewer:SmallWindowTooltip_OnLeave(self, event)
 		</OnLeave>
 	</Scripts>
 	-->
-		
+
 	<Layers>
 		<Layer >
 			<FontString name="$parentName" inherits="GameFontNormal" wraponspaces="false" justifyH="RIGHT" text=""> <!--GameFontHighlight-->
@@ -227,8 +227,8 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				</Offset>
 				</Anchor>
 				</Anchors>
-			</FontString>			
-			
+			</FontString>
+
 		</Layer>
 	</Layers>
 	<Frames>
@@ -237,7 +237,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 			<Size x="25" y="25"/>
 			<NormalTexture  setAllPoints ="true"/>
 			<!--<HighlightTexture alphaMode ="ADD"
-			file ="Interface\Buttons\ButtonHilight-Square"/>-->	
+			file ="Interface\Buttons\ButtonHilight-Square"/>-->
 			<Anchors>
 			<Anchor point="RIGHT" relativeTo="$parentName" relativePoint="LEFT" />
 			</Anchors>
@@ -249,17 +249,17 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 
 <!--Template for a row with a button and text for tabs-->
 <Button name = "ButtonTabRowTemplate" virtual="true">
-	<Size> 
+	<Size>
 		<AbsDimension x="560" y="14" />
 	</Size>
-	
+
 	<HighlightTexture alphaMode ="ADD" file ="Interface\FriendsFrame\UI-FriendsFrame-HighlightBar"/>
 
 <!--<HighlightTexture alphaMode ="ADD" file ="Interface\BUTTONS\UI-Listbox-Highlight"/>-->
 
 	<Layers>
 		<Layer>
-			<FontString name="$parentTitle" inherits="GameFontHighlight" wraponspaces="false" justifyH="LEFT" text="Dailies Row"> 
+			<FontString name="$parentTitle" inherits="GameFontHighlight" wraponspaces="false" justifyH="LEFT" text="Dailies Row">
 				<Size>
 				<AbsDimension x="350" y="14"/>
 				</Size>
@@ -271,7 +271,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				</Anchor>
 				</Anchors>
 			</FontString>
-			<FontString name="$parentPercent" inherits="GameFontHighlight" wraponspaces="false" justifyH="RIGHT" text=""> 
+			<FontString name="$parentPercent" inherits="GameFontHighlight" wraponspaces="false" justifyH="RIGHT" text="">
 				<Size>
 				<AbsDimension x="175" y="14"/>
 				</Size>
@@ -288,29 +288,29 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 	<Scripts>
 		<OnClick function="DugisGuideViewer_TabRow_OnEvent">
 		</OnClick>
-		
+
 		<OnEnter>
 			TabRowClickHandlerOnEnter(self,event);
-			
+
 
 		</OnEnter>
-		
+
 		<OnLeave>
 			TabRowClickHandlerOnLeave(self,event);
 		</OnLeave>
-		
+
 	</Scripts>
 </Button> <!--End of template for button with text-->
 
 
-	
+
 <Frame name ="DugisMainframe" parent ="UIParent" movable ="true">
-	
+
 		<Size x="600" y="400"/>
 		<Anchors>
 			<Anchor point="CENTER" />
 		</Anchors>
-	
+
 		<Backdrop
            bgFile="Interface\DialogFrame\UI-DialogBox-Background"
            edgeFile="Interface\DialogFrame\UI-DialogBox-Border"
@@ -326,18 +326,18 @@ http://wowprogramming.com/FrameXML/UI.xsd">
            </EdgeSize>
 		</Backdrop>
 
-	
+
 		<Scripts> <!--Mainframe scripts-->
-		   
+
 			<OnLoad> tinsert(UISpecialFrames,self:GetName()); </OnLoad>
             <OnMouseDown> self:StartMoving();  </OnMouseDown>
             <OnMouseUp>  self:StopMovingOrSizing(); </OnMouseUp>
             <OnDragStop> self:StopMovingOrSizing(); </OnDragStop>
-        </Scripts> 	
+        </Scripts>
 	<Frames>
 
 	<ScrollFrame name = "Dugis" parent="UIParent" movable ="true">
-		
+
 		<Size x="600" y="310"/>
 		<Anchors>
 		<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="DugisMainframe">
@@ -358,7 +358,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				Dugis_OnMouseWheel(self, delta);
 		   </OnMouseWheel>
 		</Scripts>
-		
+
 		<Layers>
 			<Layer level="ARTWORK">
 
@@ -424,7 +424,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 						</Offset>
 						</Anchor>
 						</Anchors>
-				</FontString>	
+				</FontString>
 				<FontString  name = "DugisTab4Desc" inherits="GameFontNormal" text="">
 						<Anchors>
 						<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="DugisTab4Title">
@@ -433,7 +433,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 						</Offset>
 						</Anchor>
 						</Anchors>
-				</FontString>	
+				</FontString>
 				<FontString  name = "DugisTab5Title" inherits="GameFontHighlightLarge" text="Dungeons_title">
 						<Anchors>
 						<Anchor point="TOP" relativePoint="TOP" relativeTo="DugisMainframe">
@@ -442,7 +442,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 						</Offset>
 						</Anchor>
 						</Anchors>
-				</FontString>	
+				</FontString>
 				<FontString  name = "DugisTab5Desc" inherits="GameFontNormal" text="">
 						<Anchors>
 						<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="DugisTab5Title">
@@ -460,7 +460,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 						</Offset>
 						</Anchor>
 						</Anchors>
-				</FontString>	
+				</FontString>
 				<FontString  name = "DugisTab6Desc" inherits="GameFontNormal" text="">
 						<Anchors>
 						<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="DugisTab6Title">
@@ -469,7 +469,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 						</Offset>
 						</Anchor>
 						</Anchors>
-				</FontString>	
+				</FontString>
 				<FontString  name = "DugisTab7Title" inherits="GameFontHighlightLarge" text="Settings">
 						<Anchors>
 						<Anchor point="TOP" relativePoint="TOP" relativeTo="DugisMainframe">
@@ -478,7 +478,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 						</Offset>
 						</Anchor>
 						</Anchors>
-				</FontString>	
+				</FontString>
 				<FontString  name = "DugisTab7Desc" inherits="GameFontNormal" text="" hidden = "true">
 						<Anchors>
 						<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="DugisTab7Title">
@@ -487,12 +487,12 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 						</Offset>
 						</Anchor>
 						</Anchors>
-				</FontString>					
+				</FontString>
 				<Texture setAllPoints="true">
 
 				</Texture>
 			</Layer>
-		</Layers>			
+		</Layers>
 		<Frames>
 			<!--<Slider name ="Dugis_HSlider" orientation="HORIZONTAL" minValue="0" maxValue="100" defaultValue="0" valueStep="1">
 				<Size x="150" y="25"/>
@@ -522,8 +522,8 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 			</Slider>-->
 			<Slider name ="Dugis_VSlider" orientation="VERTICAL" minValue="0" maxValue="10000" defaultValue="0" valueStep="1" inherits="UIPanelScrollBarTemplate" frameStrata="MEDIUM">
 			<!--	<Size x="25" y="150"/>-->
-			<Size x="25" y="260"/>	
-				
+			<Size x="25" y="260"/>
+
 				<Anchors>
 				<Anchor point ="RIGHT" relativePoint="RIGHT" relativeTo="DugisMainframe">
 					<Offset>
@@ -543,7 +543,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 						<AbsInset left="3" right="3" top ="6" bottom ="6"/>
 					</BackgroundInsets>
 				</Backdrop>
-					<Scripts>				
+					<Scripts>
 					<OnValueChanged>
 					Dugis:SetVerticalScroll(self:GetValue())
 					<!--Dugis_UpdateIcons(1)-->
@@ -554,14 +554,14 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				<Size x="25" y ="25"/>
 				</ThumbTexture>
 			</Slider>
-		
-		
-		<!--Tab1-->  
+
+
+		<!--Tab1-->
 			<Button name="DugisTab1" inherits="CharacterFrameTabButtonTemplate" SetFontObject="GameFontHighlightSmall" id="1" text="Current Guide">
                <Anchors>
                    <Anchor point="TOP" relativePoint="BOTTOMLEFT" relativeTo="DugisMainframe">
                        <Offset>
-                         
+
 						<!--  <AbsDimension x="60" y="5"/>-->
 						<AbsDimension x="60" y="6"/>
                        </Offset>
@@ -576,7 +576,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 
                </Scripts>
            </Button>
-		<!--Tab2-->  
+		<!--Tab2-->
 			<Button name="DugisTab2" inherits="CharacterFrameTabButtonTemplate" id="2" text="Leveling">
                <Anchors>
                    <Anchor point="LEFT" relativeTo="DugisTab1" relativePoint="RIGHT">
@@ -593,7 +593,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
                    </OnClick>
                </Scripts>
            </Button>
-			<!--Tab3-->  
+			<!--Tab3-->
 			<Button name="DugisTab3" inherits="CharacterFrameTabButtonTemplate" id="3" text="Dungeon">
                <Anchors>
                    <Anchor point="LEFT" relativeTo="DugisTab2" relativePoint="RIGHT">
@@ -605,7 +605,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
                <Scripts>
                    <OnClick>
 						DugisGuideViewer:ShowTab(3)
-						
+
 						PanelTemplates_SetTab(Dugis, 3);
 						PlaySound("igCharacterInfoTab");
                    </OnClick>
@@ -622,7 +622,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
                <Scripts>
                    <OnClick>
                        DugisGuideViewer:ShowTab(4)
-						
+
 						PanelTemplates_SetTab(Dugis, 4);
 						PlaySound("igCharacterInfoTab");
                    </OnClick>
@@ -643,7 +643,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 						PlaySound("igCharacterInfoTab");
                    </OnClick>
                </Scripts>
-           </Button>	
+           </Button>
 			<Button name="DugisTab6" inherits="CharacterFrameTabButtonTemplate" id="6" text="Ach/Prof"  >
                <Anchors>
                    <Anchor point="LEFT" relativeTo="DugisTab5" relativePoint="RIGHT">
@@ -671,26 +671,26 @@ http://wowprogramming.com/FrameXML/UI.xsd">
                </Anchors>
                <Scripts>
                    <OnClick>
-                       
+
 						DugisGuideViewer:ShowTab(7)
 						PanelTemplates_SetTab(Dugis, 7);
 						PlaySound("igCharacterInfoTab");
                    </OnClick>
 
                </Scripts>
-           </Button>					   
+           </Button>
 			</Frames>
-			
-			
+
+
 			<ScrollChild name = "Scroller">
 				<!--<Frame name = "ViewTab">-->
 					<Frame name = "DGVTabFrame1">
 					<Size x="250" y="10000"/>
 					<Scripts>
-					   <OnLoad> 
-						
-						
-							self:RegisterEvent("ADDON_LOADED");							
+					   <OnLoad>
+
+
+							self:RegisterEvent("ADDON_LOADED");
 							self:RegisterEvent("PLAYER_LOGIN");
 							self:RegisterEvent("ZONE_CHANGED");
 							self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
@@ -703,13 +703,20 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 							self:RegisterEvent("ACHIEVEMENT_EARNED")
 							self:RegisterEvent("CRITERIA_UPDATE")
 							self:RegisterEvent("TRADE_SKILL_UPDATE")
-						
+
+							self:RegisterEvent("GOSSIP_SHOW")
+							self:RegisterEvent("QUEST_GREETING")
+							self:RegisterEvent("QUEST_DETAIL")
+							self:RegisterEvent("QUEST_PROGRESS")
+							self:RegisterEvent("QUEST_COMPLETE")
+
+
 					   </OnLoad>
 					   <OnEvent function="DugisMainframe_OnEvent"/>
-					   
-					   
+
+
 					</Scripts>
-					
+
 					<Frames >
 						<Button name="RecapPanelDetail1" inherits="RecapPanelDetailTemplate" visible="false" >
 							<Anchors>
@@ -720,9 +727,9 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 							</Anchor>
 							</Anchors>
 						</Button>
-						
 
-						
+
+
 					</Frames>
 				</Frame>
 		</ScrollChild>
@@ -730,107 +737,107 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 	<!--
 		<ScrollFrame>
 		<ScrollChild name ="ViewFrame">
-			<Frame name ="DGVTabFrame1"  movable ="true"> 
+			<Frame name ="DGVTabFrame1"  movable ="true">
 				<Size x="550" y="360"/>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="DugisMainframe"/>
 				</Anchors>
 
-			</Frame>	
+			</Frame>
 		</ScrollChild>
-	</ScrollFrame> End Leveling Scroll Frame-->		
+	</ScrollFrame> End Leveling Scroll Frame-->
 
 	<ScrollFrame>
 		<ScrollChild visible ="true">
-			<Frame name ="DGVTabFrame2"  movable ="true" visible="true"> 
+			<Frame name ="DGVTabFrame2"  movable ="true" visible="true">
 				<Size x="550" y="360"/>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="DugisMainframe"/>
 				</Anchors>
 
-			</Frame>	
+			</Frame>
 		</ScrollChild>
 	</ScrollFrame> <!--End Dailies Scroll Frame-->
 
 	<ScrollFrame>
 		<ScrollChild name ="EventsFrame">
-			<Frame name ="DGVTabFrame3"  movable ="true"> 
+			<Frame name ="DGVTabFrame3"  movable ="true">
 				<Size x="550" y="360"/>
-				
+
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="DugisMainframe"/>
 				</Anchors>
 
-			</Frame>	
+			</Frame>
 		</ScrollChild>
-	</ScrollFrame> <!--End Events Scroll Frame-->	
-	
+	</ScrollFrame> <!--End Events Scroll Frame-->
+
 	<ScrollFrame>
 		<ScrollChild name ="DungeonsFrame">
-			<Frame name ="DGVTabFrame4"  movable ="true" > 
+			<Frame name ="DGVTabFrame4"  movable ="true" >
 				<Size x="550" y="360"/>
-				
+
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="DugisMainframe"/>
 				</Anchors>
 
-			</Frame>	
+			</Frame>
 		</ScrollChild>
-	</ScrollFrame> <!--End Dungeons Scroll Frame-->		
+	</ScrollFrame> <!--End Dungeons Scroll Frame-->
 	<ScrollFrame>
 		<ScrollChild name ="DungeonsMapFrame">
-			<Frame name ="DGVTabFrame5"  movable ="true" > 
+			<Frame name ="DGVTabFrame5"  movable ="true" >
 				<Size x="550" y="360"/>
-				
+
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="DugisMainframe"/>
 				</Anchors>
 
-			</Frame>	
-		</ScrollChild>		
-	</ScrollFrame> <!--End Dungeon map Scroll Frame-->	
-	
+			</Frame>
+		</ScrollChild>
+	</ScrollFrame> <!--End Dungeon map Scroll Frame-->
+
 	<ScrollFrame>
 		<ScrollChild name ="DungeonsMapFrame">
-			<Frame name ="DGVTabFrame6"  movable ="true" > 
+			<Frame name ="DGVTabFrame6"  movable ="true" >
 				<Size x="550" y="360"/>
-				
+
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="DugisMainframe"/>
 				</Anchors>
 
-			</Frame>	
-		</ScrollChild>		
-	</ScrollFrame> <!--End Dungeon map Scroll Frame-->	
-	
+			</Frame>
+		</ScrollChild>
+	</ScrollFrame> <!--End Dungeon map Scroll Frame-->
+
 	<ScrollFrame>
 		<ScrollChild name ="DGV_Settings">
-			<Frame name ="DGVTabFrame7"  movable ="true" visible="true"> 
+			<Frame name ="DGVTabFrame7"  movable ="true" visible="true">
 				<Size x="550" y="360"/>
-				
+
 				<Anchors>
 					<!--<Anchor point="TOPLEFT" relativeTo="DugisMainframe"/>-->
 					<Anchor point="CENTER"/>
 				</Anchors>
-								
-			</Frame>	
-		</ScrollChild>		
-	</ScrollFrame> <!--End Dungeon map Scroll Frame-->	
-	
-	
+
+			</Frame>
+		</ScrollChild>
+	</ScrollFrame> <!--End Dungeon map Scroll Frame-->
+
+
 	<Frame name ="Botframe" >
 		<Size x="550" y="10"/>
 		<Anchors>
 			<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="Dugis"/>
 		</Anchors>
-		
+
 		<Frames>
 
-					  
+
 		</Frames>
 	</Frame> <!--End Bottom Frame-->
-	
-							
+
+
 	<Button name = "DugisResetButton" inherits="UIPanelButtonTemplate" text = "Reset" hidden="false">
 		 <Size>
 			<AbsDimension x="50" y="20"/>
@@ -844,9 +851,9 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 		</Anchors>
 		<Scripts>
 			<OnClick>DugisGuideViewer_Reset_ButtonClick();</OnClick>
-		</Scripts> 
+		</Scripts>
 	</Button>
-	
+
 	<Button name = "DugisReloadButton" inherits="UIPanelButtonTemplate" text = "Reload" hidden="false">
 		 <Size>
 			<AbsDimension x="50" y="20"/>
@@ -860,10 +867,10 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 		</Anchors>
 		<Scripts>
 			<OnClick>DugisGuideViewer_Reload_ButtonClick();</OnClick>
-		</Scripts> 
+		</Scripts>
 	</Button>
-		
-	
+
+
 	<Button name = "DugisPercentButton"  hidden="false">
 		 <Size>
 			<AbsDimension x="100" y="20"/>
@@ -885,9 +892,9 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 			</Layer>
 		</Layers>
 	</Button>
-	
-	
-	
+
+
+
 	<Button name = "DugisCloseButton" inherits="UIPanelCloseButton">
 		<Anchors>
 			<Anchor point="TOPRIGHT" relativeTo="DugisMainframe" >
@@ -896,12 +903,12 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				</Offset>
 			</Anchor>
 		</Anchors>
-		
+
 		<Scripts>
 			<OnClick>DugisGuideViewer_Close_ButtonClick(); PlaySound("igMainMenuOptionCheckBoxOn"); </OnClick>
-			
-		</Scripts> 
-		
+
+		</Scripts>
+
 	</Button>
 
 	</Frames> <!--End main Frames-->
@@ -915,10 +922,10 @@ http://wowprogramming.com/FrameXML/UI.xsd">
                     <AbsDimension x="0" y="220"/>
             </Offset>
             </Anchor>
-			
+
 		</Anchors>
 <!--
-		<Backdrop 
+		<Backdrop
 		bgFile ="Interface\Buttons\UI-SliderBar-Background" tile ="true">
 		<EdgeSize>
 		<AbsValue val="8"/>
@@ -926,39 +933,39 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 		<TileSize>
 			<AbsValue val ="8"/>
 		</TileSize>
-		</Backdrop>	
+		</Backdrop>
 -->
 		<Scripts>
 			<OnLoad>
 			self:RegisterForDrag("LeftButton");
 			</OnLoad>
-			<OnMouseDown> 
+			<OnMouseDown>
 				PlaySound("igCharacterInfoTab");
 				SmallFrameClickHandler(self,button);
 			</OnMouseDown>
-			<!--<OnMouseUp>  
-				this:StopMovingOrSizing(); 
+			<!--<OnMouseUp>
+				this:StopMovingOrSizing();
 			</OnMouseUp>
-			<OnDragStop> 
-				this:StopMovingOrSizing(); 
-				
+			<OnDragStop>
+				this:StopMovingOrSizing();
+
 			</OnDragStop>-->
-			
+
 			<OnDragStart>
 				DugisGuideViewer:OnDragStart(self);
 			</OnDragStart>
 			<OnDragStop>
 				DugisGuideViewer:OnDragStop(self);
 			</OnDragStop>
-			
+
 			<OnEnter>
 				DugisGuideViewer:SmallWindowTooltip_OnEnter(self, event)
 			</OnEnter>
 			<OnLeave>
-				DugisGuideViewer:SmallWindowTooltip_OnLeave(self, event)		
+				DugisGuideViewer:SmallWindowTooltip_OnLeave(self, event)
 			</OnLeave>
 		</Scripts>
-	
+
 		<Frames>
 			<Button name="DugisSmallFrameLogo" frameStrata="LOW" hidden = "true">
 				<Size x="256" y="64"/>
@@ -972,15 +979,15 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				</Anchors>
 				<Scripts>
 				<OnLoad>
-					tinsert(UISpecialFrames,self:GetName());		
+					tinsert(UISpecialFrames,self:GetName());
 				</OnLoad>
 				</Scripts>
 			</Button>
-		
+
 			<Button name="SmallFrameDetail1" inherits="SmallWindowTemplate"  frameStrata="LOW" >
 				<!--<Size x="300" y="50"/>-->
 				<Size x="200" y="50"/>
-				
+
 				<Anchors>
 				<Anchor point="RIGHT" >
 				<Offset>
@@ -988,7 +995,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				</Offset>
 				</Anchor>
 				</Anchors>
-								
+
 			</Button>
 
 			<CheckButton name = "$parentChk" inherits ="UICheckButtonTemplate">
@@ -1000,13 +1007,13 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				</Offset>
 				</Anchor>
 				</Anchors>
-				
+
 				<Scripts>
 				<OnClick function="SmallFrameCheckButton_OnEvent">
 				</OnClick>
 				</Scripts>
-			</CheckButton>		
-	
+			</CheckButton>
+
 			<Button name = "$parentMaximize" hidden = "true" frameStrata="MEDIUM" >
 				<Size x="21" y="42"/>
 				<NormalTexture file ="Interface\buttons\UI-MicroButton-World-Up"/>
@@ -1019,15 +1026,15 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 				</Offset>
 				</Anchor>
 				</Anchors>
-				
+
 				<Scripts>
 				<OnClick>UIFrameFadeIn(DGV_DungeonFrame, 0.5, 0, 1)</OnClick>
-				
+
 				</Scripts>
-				
-			</Button>		
+
+			</Button>
 	</Frames>
-</Frame>	 
+</Frame>
  <!--===================================
    Dungeon Frame
    ====================================-->
@@ -1035,7 +1042,7 @@ http://wowprogramming.com/FrameXML/UI.xsd">
    <Frame name='DGV_DungeonFrame' inherits='DugisBorderFrame' parent='UIParent' movable='true' enableMouse='true' hidden='true' toplevel="true">
 
       <Size> <AbsDimension x='820' y='554'/> </Size>
-      <Anchors> 
+      <Anchors>
          <Anchor point="CENTER"> <Offset> <AbsDimension x='0' y='0'/> </Offset> </Anchor>
       </Anchors>
       <Frames>
@@ -1062,17 +1069,17 @@ http://wowprogramming.com/FrameXML/UI.xsd">
                   </Scripts>
                </SimpleHTML>
             </ScrollChild>
-		 </ScrollFrame>	
+		 </ScrollFrame>
       </Frames>
       <Scripts>
 
       </Scripts>
    </Frame>
-	
+
 	<!--Test Frame -->
 	<Frame name='DGV_TestFrame' inherits='DugisBorderFrame' parent='UIParent' movable='true' resizable='true' enableMouse='true' hidden='true' toplevel="true">
 		<Size> <AbsDimension x='100' y='100'/> </Size>
-			<Anchors> 
+			<Anchors>
 			<Anchor point="CENTER"> <Offset> <AbsDimension x='0' y='0'/> </Offset> </Anchor>
 			</Anchors>
 		<Frames>
@@ -1083,5 +1090,5 @@ http://wowprogramming.com/FrameXML/UI.xsd">
 			</Button>
 		</Frames>
 	</Frame>
-	
+
 </Ui>

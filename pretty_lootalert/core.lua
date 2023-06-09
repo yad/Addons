@@ -159,7 +159,7 @@ LootAlertFrameMixIn.alertButton = {};
 
 function LootAlertFrameMixIn:AddAlert(name, link, quality, texture, count, ignore, label, toast, rollType, rollLink, tip, money, subType)
 	if not ignore then
-		if UnitLevel("player") < 80 then
+		if UnitLevel("player") < 1024 then
 			if quality < quality_low then
 				return;
 			end

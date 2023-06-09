@@ -1,0 +1,15 @@
+tag 3.3.0.8-Release
+fbff945d8b548e4d52a53d496153684316696640
+tekkub <tekkub@gmail.com>
+2010-06-06 17:04:31 -0600
+
+Weekly build
+
+
+--------------------
+
+tekkub:
+	- Weekly build 3.3.0.8-Release
+	- Update changelog for 3.3.0.8-Release
+	- Forgot about moving the itemref tooltip
+	Fixes #8
